@@ -1,38 +1,59 @@
 #All dates in SQL should be in the YYYY-MM-DD format
-##### Exercise 1 #####
-DROP TABLE if exists PATRON;
-CREATE TABLE PATRON(
-patron_id int NOT NULL auto_increment,
-patron_fname varchar(15) NOT NULL,
-patron_lname varchar(15) NOT NULL,
-patron_phone varchar(13) NOT NULL,
-patron_address varchar(30) NOT NULL,
-patron_email varchar(25) NOT NULL,
-dob CHAR(10) NOT NULL,
+##### Step 2 #####
+DROP TABLE if exists CLASS;
+CREATE TABLE CLASS(
+class_id int NOT NULL,
+class_start date NOT NULL,
+class_end date NOT NULL,
 
-PRIMARY KEY (patron_id)
+PRIMARY KEY (class_id)
 ) ENGINE=INNODB;
 
-DROP TABLE if exists BOOK;
-CREATE TABLE BOOK(
-book_id int auto_increment NOT NULL,
-book_name varchar(40) NOT NULL,
-book_category varchar(30) NOT NULL,
 
-PRIMARY KEY (book_id)
+DROP TABLE if exists CHILD;
+CREATE TABLE CHILD(
+child_id int NOT NULL auto_increment,
+child_fname varchar(15) NOT NULL,
+child_lname varchar(15) NOT NULL,
+custodian_name varchar(30) NOT NULL,
+phone varchar(13) NOT NULL,
+address varchar(30) NOT NULL,
+dob date NOT NULL,
+
+PRIMARY KEY (child_id)
 ) ENGINE=INNODB;
 
-DROP TABLE if exists BORROW;
-CREATE TABLE BORROW(
-borrow_id int auto_increment,
-patron_id varchar(40) REFERENCES PATRON(patron_id),
-book_id varchar(30) REFERENCES BOOK(book_id),
-borrow_date date NOT NULL,
-return_date date,
-date_due date NOT NULL,
+DROP TABLE if exists ENROLL;
+CREATE TABLE ENROLL(
+enroll_id int auto_increment,
+class_id varchar(30) REFERENCES CLASS(class_id),
+child_id varchar(5) REFERENCES CHILD(child_id),
+enroll_date date NOT NULL,
 
-PRIMARY KEY(borrow_id)
+PRIMARY KEY(enroll_id)
 ) ENGINE=INNODB;
+
+
+##### Step 3 #####
+## a. Insert 4 classes based on age##
+insert into CLASS(class_id, , )
+  values('', '', '');
+
+
+## b. Insert 20 children##
+
+## c. Insert enrollments##
+
+
+
+
+
+
+
+
+
+
+
 
 ##### Exercise 2 #####
 /*Insert 5 patrons*/
