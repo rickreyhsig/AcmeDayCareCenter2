@@ -1,3 +1,3 @@
-This is a basic web application I have built for a class I took in the Fall of 2014 at Montgomery College.  It is a basic LAMP application using PHP as the backend server language that creates a system for the ACME Day Care Center.  Using a MySQL database, it can store classes for 3/4/5/6 years old as well as enrolled children.
+This is a basic web application I have built for a class I took in the Fall of 2014 at Montgomery College.  It is a basic LAMP application using PHP as the backend server language that creates a system for the ACME Day Care Center.  Using a MySQL database, it stores classes for 3/4/5/6 year olds and the enrolled children.
 
 The project specification as assigned by the professor is included as a docx file.
