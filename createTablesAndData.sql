@@ -1,4 +1,3 @@
-#All dates in SQL should be in the YYYY-MM-DD format
 ##### Step 2 #####
 DROP TABLE if exists CLASS;
 CREATE TABLE CLASS(
@@ -34,133 +33,141 @@ PRIMARY KEY(enroll_id)
 ) ENGINE=INNODB;
 
 
+#All dates in SQL should be in the YYYY-MM-DD OR YYYY/MM/DD format
+
 ##### Step 3 #####
 ## a. Insert 4 classes based on age##
-insert into CLASS(class_id, , )
-  values('', '', '');
+insert into CLASS(class_id, class_start, class_end)
+  values('3', '2015-01-26', '2015-05-15');
+
+insert into CLASS(class_id, class_start, class_end)
+  values('4', '2015-01-26', '2015-05-15');
+
+insert into CLASS(class_id, class_start, class_end)
+  values('5', '2015-01-26', '2015-05-15');
+
+insert into CLASS(class_id, class_start, class_end)
+  values('6', '2015-01-26', '2015-05-15');
 
 
 ## b. Insert 20 children##
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Abraham', 'Billow', 'Alfred Billow', '(240)456-7346', '101 Elm St', '2012/03/02');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Brian', 'Catz', 'Benjamin Catz', '(240)456-7347', '102 Elm St', '2012/04/03');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Catherine', 'Doe', 'Caedmon Doe', '(240)456-7348', '103 Elm St', '2011/05/04');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Dudley', 'Elk', 'Dana Elk', '(240)456-7349', '104 Elm St', '2011/06/05');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Emmanuel', 'Fike', 'Edwin Fike', '(240)456-7350', '105 Elm St', '2011/07/06');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Fabiana', 'Gale', 'Fabricio Gale', '(240)456-7351', '106 Elm St', '2011/08/07');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Gabriel', 'Holden', 'Gabrielle Holden', '(240)456-7352', '107 Elm St', '2011/09/08');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Hadad', 'Ilia', 'Habakkuk Ilia', '(240)456-7353', '108 Elm St', '2010/10/09');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Issac', 'Jones', 'Iacob Jones', '(240)456-73454', '109 Elm St', '2010/11/10');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Jason', 'Kain', 'Jacob Kain', '(240)456-7355', '110 Elm St', '2010/12/11');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Kacey', 'Liam', 'Kayla Liam', '(240)456-7356', '111 Elm St', '2010/01/12');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Laura', 'Mocey', 'Lakeisha Mocey', '(240)456-7357', '112 Elm St', '2010/02/13');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Michael', 'Nyemier', 'Malik Nyemier', '(240)456-7358', '113 Elm St', '2010/03/14');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Nayson', 'Oregun', 'Nabil Oregun', '(240)456-7359', '114 Elm St', '2009/04/15');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Obed', 'Payne', 'Oberon Payne', '(240)456-7360', '115 Elm St', '2009/05/16');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Paul', 'Quasar', 'Paulo Quasar', '(240)456-7361', '116 Elm St', '2009/06/17');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Quincy', 'Rickets', 'Qadir Rickets', '(240)456-7362', '117 Elm St', '2009/07/18');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Richard', 'Smith', 'Robert Smith', '(240)456-7363', '118 Elm St', '2009/08/19');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Samuel', 'Tobin', 'Sabah Tobin', '(240)456-7364', '119 Elm St', '2009/09/20');
+
+insert into CHILD(child_fname, child_lname, custodian_name, phone, address, dob)
+  values('Thomas', 'Uzil', 'Tabatha Uzil', '(240)456-7365', '120 Elm St', '2009/10/21');
 
 ## c. Insert enrollments##
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('3', '1', '2014/09/01');
 
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('3', '2', '2014/09/03');
 
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('4', '3', '2014/09/05');
 
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('4', '4', '2014/09/07');
 
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('4', '5', '2014/09/09');
 
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('4', '6', '2014/09/11');
 
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('4', '7', '2014/09/13');
 
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('5', '8', '2014/09/15');
 
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('5', '9', '2014/09/17');
 
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('5', '10', '2014/09/19');
 
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('5', '11', '2014/09/21');
 
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('5', '12', '2014/09/23');
 
-##### Exercise 2 #####
-/*Insert 5 patrons*/
-insert into PATRON(patron_fname, patron_lname, patron_phone, patron_address, patron_email, dob)
-  values('Abraham', 'Billow', '(240)456-7346', '101 Elm St', 'aBillow@email.com', '1981/01/02');
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('5', '13', '2014/09/25');
 
-insert into PATRON(patron_fname, patron_lname, patron_phone, patron_address, patron_email, dob)
-  values('Brian', 'Catz', '(240)456-7347', '102 Elm St', 'bCatz@email.com', '1981/01/04');
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('6', '14', '2014/09/27');
 
-insert into PATRON(patron_fname, patron_lname, patron_phone, patron_address, patron_email, dob)
-  values('Catherine', 'Doe', '(240)456-7348', '103 Elm St', 'cDoe@email.com', '1981/01/06');
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('6', '15', '2014/09/29');
 
-insert into PATRON(patron_fname, patron_lname, patron_phone, patron_address, patron_email, dob)
-  values('Dudley', 'Elk', '(240)456-7349', '104 Elm St', 'dElk@email.com', '1981/01/08');
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('6', '16', '2014/10/01');
 
-insert into PATRON(patron_fname, patron_lname, patron_phone, patron_address, patron_email, dob)
-  values('Emannuel', 'Fike', '(240)456-7350', '105 Elm St', 'eFike@email.com','1981/01/10');
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('6', '17', '2014/10/03');
 
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('6', '18', '2014/10/05');
 
-/*Insert 15 books*/
-insert into BOOK(book_name, book_category)
-  values('KILLING PATTON', 'NON-FICTION');
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('6', '19', '2014/10/07');
 
-insert into BOOK(book_name, book_category)
-  values('YES PLEASE', 'NON-FICTION');
-
-insert into BOOK(book_name, book_category)
-  values('NOT THAT KIND OF GIRL', 'NON-FICTION');
-
-insert into BOOK(book_name, book_category)
-  values('BEING MORTAL', 'NON-FICTION');
-
-insert into BOOK(book_name, book_category)
-  values('TRUE LOVE', 'NON-FICTION');
-
-insert into BOOK(book_name, book_category)
-  values('IF I STAY', 'YOUNG ADULT');
-
-insert into BOOK(book_name, book_category)
-  values('THE FAULT IN OUR STARS', 'YOUNG ADULT');
-
-insert into BOOK(book_name, book_category)
-  values('LOOKING FOR ALAKSA', 'YOUNG ADULT');
-
-insert into BOOK(book_name, book_category)
-  values('WHERE SHE WENT', 'YOUNG ADULT');
-
-insert into BOOK(book_name, book_category)
-  values('PAPER TOWNS', 'YOUNG ADULT');
-
-insert into BOOK(book_name, book_category)
-  values('BEING MORTAL', 'SCIENCE');
-
-insert into BOOK(book_name, book_category)
-  values('THE INNOVATORS', 'SCIENCE');
-
-insert into BOOK(book_name, book_category)
-  values('KILLING PATTON', 'POLITICS');
-
-insert into BOOK(book_name, book_category)
-  values('GRAY MOUNTAIN', 'FICTION');
-
-insert into BOOK(book_name, book_category)
-  values('HOW CHILDREN SUCCEED', 'EDUCATION');
-
-
-#Insert 10 borrows from 5 patrons
-insert into BORROW(patron_id, book_id, borrow_date, return_date, date_due)
-  values('1', '1', '2014/09/10', '2014/09/30', '2014/10/01');
-
-insert into BORROW(patron_id, book_id, borrow_date, return_date, date_due)
-  values('1', '3', '2014/09/10', '2014/09/27', '2014/10/01');
-
-insert into BORROW(patron_id, book_id, borrow_date, return_date, date_due)
-  values('2', '5', '2014/09/10', '2014/09/28', '2014/10/01');
-
-insert into BORROW(patron_id, book_id, borrow_date, return_date, date_due)
-  values('2', '7', '2014/10/10', '2014/10/30', '2014/11/01');
-
-insert into BORROW(patron_id, book_id, borrow_date, return_date, date_due)
-  values('3', '9', '2014/10/10', '2014/10/15', '2014/11/01');
-
-insert into BORROW(patron_id, book_id, borrow_date, return_date, date_due)
-  values('3', '11', '2014/11/11', '', '2014/12/02');
-
-insert into BORROW(patron_id, book_id, borrow_date, return_date, date_due)
-  values('4', '13', '2014/11/11', '', '2014/12/02');
-
-insert into BORROW(patron_id, book_id, borrow_date, return_date, date_due)
-  values('4', '15', '2014/11/11', '', '2014/12/02');
-
-insert into BORROW(patron_id, book_id, borrow_date, return_date, date_due)
-  values('5', '2', '2014/11/11', '', '2014/12/02');
-
-insert into BORROW(patron_id, book_id, borrow_date, return_date, date_due)
-  values('5', '4', '2014/11/11', '', '2014/12/02');
-
-
-
-##### Exercise 3 #####
-SELECT * FROM BOOK;
-
-SELECT * FROM PATRON;
-
-SELECT PATRON.patron_fname, PATRON.patron_lname, BOOK.book_name
-FROM PATRON, BOOK, BORROW
-WHERE PATRON.patron_id = BORROW.patron_id
-AND BOOK.book_id = BORROW.book_id
-AND BORROW.return_date =  '0000-00-00';
-#If return_date == '0000-00-00' item is borrowed
+insert into ENROLL(class_id, child_id, enroll_date)
+  values('6', '20', '2014/10/09');
