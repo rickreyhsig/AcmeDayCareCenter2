@@ -64,6 +64,7 @@ if ( strlen($class_id) == 0 ){
   }
 
   echo "</table>";
+  echo '<br/><a href="./index.html">Home</a>';
 ?>
 
 <style>

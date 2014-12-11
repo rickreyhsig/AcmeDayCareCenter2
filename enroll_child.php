@@ -18,22 +18,28 @@ $dob = $_GET['dob'];
 if ( strlen($child_fname) == 0 ){
   echo 'Please provide the first name for the child.';
   //echo "<script type='text/javascript'>alert('Please provide the first name for the child.');</script>";
-  echo '<br/><a href="./choose_operation.php?operation=enroll_child">Go back!</a>';
+  echo '<br/><a href="./choose_operation.php?operation=enroll_child">Back</a>';
+  exit();
 } elseif ( strlen($child_lname) == 0 ){
 echo 'Please provide the last name for the child.';
-echo '<br/><a href="./choose_operation.php?operation=enroll_child">Go back!</a>';
+echo '<br/><a href="./choose_operation.php?operation=enroll_child">Back</a>';
+exit();
 } elseif ( strlen($custodian_name) == 0 ){
 echo 'Please provide the custodian name.';
-echo '<br/><a href="./choose_operation.php?operation=enroll_child">Go back!</a>';
+echo '<br/><a href="./choose_operation.php?operation=enroll_child">Back</a>';
+exit();
 } elseif ( strlen($phone) == 0 ){
 echo 'Please provide a phone number.';
-echo '<br/><a href="./choose_operation.php?operation=enroll_child">Go back!</a>';
+echo '<br/><a href="./choose_operation.php?operation=enroll_child">Back</a>';
+exit();
 } elseif ( strlen($address) == 0 ){
 echo 'Please provide an address.';
-echo '<br/><a href="./choose_operation.php?operation=enroll_child">Go back!</a>';
+echo '<br/><a href="./choose_operation.php?operation=enroll_child">Back</a>';
+exit();
 } elseif ( strlen($dob) == 0 ){
 echo 'Please provide the date of birth for the child.';
-echo '<br/><a href="./choose_operation.php?operation=enroll_child">Go back!</a>';
+echo '<br/><a href="./choose_operation.php?operation=enroll_child">Back</a>';
+exit();
 }
 
 echo '
