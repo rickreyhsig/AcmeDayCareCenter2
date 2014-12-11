@@ -2,4 +2,4 @@ This is a basic LAMP application using PHP as the backend server language that c
 
 Uses HTTP Basic Authentication.
 
-The project specification are included as a docx file.
+The project specs are included as a docx file.
