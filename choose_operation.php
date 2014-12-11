@@ -45,9 +45,8 @@ if (!isset($_SERVER['PHP_AUTH_USER'])) {
     exit;
   }
 }
-?>
 /********AUTHENTICATION*********/
-
+?>
 
 <html>
 <?php
@@ -56,26 +55,29 @@ $operation = $_GET['operation'];
 if($operation=='enroll_child'){
   echo "Please enter information of the child that will be enrolled:";
   echo '<form method=get action=enroll_child.php>
-  <input input=text size="30" name=child_fname value="Child\'s First Name"><br>
-  <input input=text size="30" name=child_lname value="Child\'s Last Name"><br>
-  <input input=text size="30" name=custodian_name  value="Custodian Name"><br>
-  <input input=text size="30" name=phone value="Phone"><br>
-  <input input=text size="30" name=address value="Address"><br>
-  <input input=text size="30" name=dob value="Child DOB (YYYY/MM/DD)"><br>
+  Child\'s First Name<input input=text size="30" name=child_fname value="" style="margin-left:76px"><br>
+  Child\'s Last Name<input input=text size="30" name=child_lname value=""  style="margin-left:79px"><br>
+  Custodian Name<input input=text size="30" name=custodian_name  value=""  style="margin-left:90px"><br>
+  Phone<input input=text size="30" name=phone value=""  style="margin-left:157px"><br>
+  Address<input input=text size="30" name=address value="" style="margin-left:145px"><br>
+  Child DOB (YYYY/MM/DD)<input input=text size="30" name=dob value="" style="margin-left:3px"><br>
   <input type=submit>';
+  echo '<br/><a href="./index.html">Home</a>';
 }elseif($operation=='assign_child'){
   echo "Please enter information of the child that will be assigned:";
   echo '<form method=get action=assign_child.php>
-  <input input=text name=child_fname value="Child\'s First Name"><br>
-  <input input=text name=child_lname value="Child\'s Last Name"><br>
-  <input input=text name=class_id value="Child Age/Class ID"><br>
-  <input input=text name=child_id value="Child ID"><br>
+  Child\'s First Name<input input=text name=child_fname value="" style="margin-left:9px"><br>
+  Child\'s Last Name<input input=text name=child_lname value="" style="margin-left:11px"><br>
+  Child Age/Class ID<input input=text name=class_id value="" style="margin-left:3px"><br>
+  Child ID<input input=text name=child_id value="" style="margin-left:73px"><br>
   <input type=submit>';
+  echo '<br/><a href="./index.html">Home</a>';
 }elseif($operation=='list_children'){
   echo "Please enter information of the class you want to list the children for:";
   echo '<form method=get action=list_children.php>
-  <input input=text name=class_id value="Class ID/Age Group"><br>
+  Class ID/Age Group<input input=text name=class_id value="" style="margin-left:3px"><br>
   <input type=submit>';
+  echo '<br/><a href="./index.html">Home</a>';
 }
 
 ?>
