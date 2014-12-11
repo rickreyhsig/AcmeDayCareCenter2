@@ -1,0 +1,444 @@
+body{
+/*background-image:url('images/ShalomLogoWhite.jpg');
+background-color:#cccccc;
+background: url('images/onTheBass.jpg');*/
+
+/*background: url(../images/ShalomLogoWhite.jpg);*/
+background-color:#ADD8E6;
+background-color:#E0FFFF;
+background-color:#B0C4DE;
+background-color:#B0E0E6;
+background-color:#87CEEB;
+
+
+
+background-color:#87CEEB;
+background-color:#87CEEB;
+background-color:#87CEEB;
+background-color:#87CEEB;
+background-color:#CCF2FF;
+background-color:#FFFFFF; /*white bckgrnd*/
+
+
+/*background-image: url(../images/gradient1.jpeg); /*Gradient*/
+/*background: url(../images/ShalomLogoWhite.jpg);  /*Logo*/
+/*background: url(../images/ShalomLogoGrayScale.jpg);  /*Logo*/
+/*background: url(../images/r8.jpg);  /*R8*/
+/*background: url(../images/a8.jpg);  /*A8*/
+
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: 0px 60px;
+background-position: center center;
+background-position: center 100px;
+/*background-size: 150px 150px;
+background-size: 80% auto;*/
+opacity: 0.9;
+
+}
+
+.container.theme-showcase{
+/*
+background: url(../images/ShalomLogoWhite.jpg);
+background-attachment: fixed;
+background-size: 100% 100%;
+background-repeat: no-repeat;*/
+/*background-color:#cccccc;*/
+}
+.jumbotron {
+/*width: 950px;*/
+/*width: 100%;*/
+padding: 35px;
+margin-bottom: 30px;
+color: none;
+background-color: #f5f5f5; /*Set jumbotron background to all white*/
+opacity: 1;
+border-style: solid solid solid solid;
+border-width: 1px;
+border-color: #000000;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  /*max-width: 90%;*/
+  /* Set the fixed height of the footer here */
+  height: 65px;
+  background-color: #f5f5f5;
+  padding-right: 60px;
+  padding-left: 60px;
+  border-radius: 6px 6px 0px 0px;
+
+   border-style: solid solid none solid;
+   border-width: 1px;
+   border-color: #000000;
+  /*margin-right: auto;
+  margin-left: auto;*/
+}
+
+.jumbotron p {
+  font-size: 15px;
+}
+
+.jumbotron h1, .jumbotron .h1 {
+  font-size: 55px;
+}
+
+
+
+@media (min-width:200px){.footer{width:85%}}
+@media (min-width:250px){.footer{width:88.5%}}
+@media (min-width:260px){.footer{width:89.15%}}
+@media (min-width:280px){.footer{width:89.5%}}
+@media (min-width:300px){.footer{width:91%}}
+@media (min-width:331px){.footer{width:92%;margin-left: -35px;}.jumbotron h1, .jumbotron .h1 {font-size: 14px;} h3, .h3{font-size: 10px;}}
+@media (min-width:400px){.footer{width:94%;margin-left: -35px;}.jumbotron h1, .jumbotron .h1 {font-size: 17px;} h3, .h3{font-size: 13px;}}
+@media (min-width:531px){.footer{width:95%;margin-left: -35px;}.jumbotron h1, .jumbotron .h1 {font-size: 24px;} h3, .h3{font-size: 16px;}}
+@media (min-width:767px){.footer{width:737px;margin-left: -35px;}.jumbotron h1, .jumbotron .h1 {font-size: 33px;}}
+@media (min-width:768px){.footer{width:720px;margin-left: -58px;}.jumbotron h1, .jumbotron .h1 {font-size: 34px;}}
+@media (min-width:992px){.footer{width:940px}}
+@media (min-width:1200px){.footer{width:91%}}
+@media (min-width:1250px){.footer{width:88%}}
+@media (min-width:1300px){.footer{width:87%}}
+@media (min-width:1350px){.footer{width:86%}}
+@media (min-width:1400px){.footer{width:85%}}
+
+
+
+
+/*body{background-size: 650px 650px;*/
+
+/*
+@media (min-width:200px){.container{width:85%}, .footer{width:85%}}
+@media (min-width:250px){.container{width:88.5%}, .footer{width:88.5%}}
+@media (min-width:260px){.container{width:89.15%}, .footer{width:89.15%}}
+@media (min-width:280px){.container{width:89.5%}, .footer{width:89.5%}}
+@media (min-width:300px){.container{width:91%}, .footer{width:91%}}
+@media (min-width:331px){.container{width:92%}, .footer{width:92%}}
+@media (min-width:400px){.container{width:94%}, .footer{width:94%}}
+@media (min-width:531px){.container{width:95%}, .footer{width:95%}}
+@media (min-width:767px){.container{width:937px}, .footer{width:737px}}
+@media (min-width:768px){.container{width:720px}, .footer{width:720px}}
+@media (min-width:992px){.container{width:940px}, .footer{width:940px}}
+@media (min-width:1200px){.container{width:1140px}, .footer{width:1140px}}
+@media (min-width:1600px){.container{width:1100px}, .footer{width:1100px}}*/
+
+
+.navbar-static-top, .navbar-fixed-top, .navbar-fixed-bottom {
+border-radius: 0px;
+margin-top: 0px;
+}
+.topBarImage {
+margin: 1px 35px 1px 5px;
+clear: none;
+}
+.topNavImage{
+margin: -55px 30px 0 0;
+clear: none;
+}
+.topNavTitle{
+margin: -10px 20px 0 0;
+padding: 0 20px 0 0;
+}
+.navbar-inverse {
+
+background-image: -webkit-linear-gradient(top,#87CEEB 0,#87CEFA 100%);
+background-image: -o-linear-gradient(top,#87CEEB 0,#87CEFA 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,from(#87CEEB),to(#87CEFA));
+background-image: linear-gradient(to bottom,#87CEEB 0,#87CEFA 100%);
+
+/*background-image: -webkit-linear-gradient(top,#FFFFFF 0,#072B8A 100%);
+background-image: -o-linear-gradient(top,#FFFFFF 0,#072B8A 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,from(#FFFFFF),to(#072B8A));
+background-image: linear-gradient(to bottom,#FFFFFF 0,#072B8A 100%);
+
+background-image: -webkit-linear-gradient(top,#072B8A 0,#FFFFFF 100%);
+background-image: -o-linear-gradient(top,#072B8A 0,#FFFFFF 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,from(#072B8A),to(#FFFFFF));
+background-image: linear-gradient(to bottom,#072B8A 0,#FFFFFF 100%);*/
+
+}
+
+.navbar-nav>li>a {
+padding-top: 21px;
+padding-bottom: 21px;
+}
+
+
+.btn-primary{
+background-image: -webkit-linear-gradient(top,#282828 0,#282828 100%);
+background-image: -o-linear-gradient(top,#282828 0,#282828 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,from(#282828),to(#282828));
+background-image: linear-gradient(to bottom,#282828 0,#282828 100%);
+border-color: #000000;
+background-color: #FFFFFF;
+}
+
+.mainBtn{
+background-image: -webkit-linear-gradient(top,#282828 0,#282828 100%);
+background-image: -o-linear-gradient(top,#282828 0,#282828 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,from(#282828),to(#282828));
+background-image: linear-gradient(to bottom,#282828 0,#282828 100%);
+border-color: #000000;
+background-color: #FFFFFF;
+color: white;
+padding: 10px 16px 10px 16px;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+border-radius: 6px 6px 6px 6px;
+font-weight: 400;
+}
+.mainBtn:hover {
+    background-color: yellow;
+    color: rgb(66, 139, 202);
+    text-decoration: none;
+}
+
+
+/*.container {
+padding-right: 15px;
+padding-left: 15px;
+}*/
+
+/*1680*/
+@media only screen and (max-width: 105.000em) {
+	body{
+		background-size: 650px 650px;
+	}
+}
+
+/*1440*/
+@media only screen and (max-width: 90.000em) {
+	body{
+		background-size: 610px 610px;
+	}
+
+}
+
+/*1400*/
+@media only screen and (max-width: 87.500em) {
+}
+
+/*1350*/
+@media only screen and (max-width: 84.375em) {
+}
+
+/*1300*/
+@media only screen and (max-width: 81.250em) {
+}
+
+/*1250*/
+@media only screen and (max-width: 78.125em) {
+}
+
+/*1200*/
+@media only screen and (max-width: 75.000em) {
+}
+
+
+/*1999
+@media only screen and (max-width: 74.938em) {
+	.footer {
+  		width: 940px;
+	}
+}
+
+/*1150
+@media only screen and (max-width: 71.875em) {
+	.footer {
+  		width: 82%;
+	}
+}
+
+/*1100
+@media only screen and (max-width: 68.750em) {
+	.footer {
+  		width: 85%;
+	}
+}
+
+/*1024*/
+@media only screen and (max-width: 64.000em) {
+	/*.footer {
+  		width: 89%;
+	}*/
+body{
+		background-size: 600px 600px;
+	}
+}
+
+/*1000*/
+@media only screen and (max-width: 62.500em) {
+	/*.footer {
+  		width: 94%;
+	}*/
+	/*h1, .h1 {
+		font-size: 55px ;
+	}*/
+}
+
+/*991
+@media only screen and (max-width: 61.938em) {
+	.footer {
+  		width: 720px;
+	}
+}
+
+
+
+/*959*/
+@media only screen and (max-width: 59.938em) {
+}
+
+/*840*/
+@media only screen and (max-width: 52.500em) {
+  .topBarImage{
+	margin: 1px 30px 1px 3px;
+  }
+  	h1, .h1 {
+		font-size: 55px;
+	}
+}
+
+
+/*768*/
+@media only screen and (max-width: 48.000em) {
+  .topBarImage{
+	margin: 1px 30px 1px 16px;
+  }
+}
+
+/*767*/
+@media only screen and (max-width: 47.938em) {
+  .topBarImage{
+	margin: 1px 30px 1px 16px;
+  }
+}
+
+/*740*/
+@media only screen and (max-width: 46.250em) {
+
+}
+
+/*690*/
+@media only screen and (max-width: 43.125em) {
+}
+
+/*653*/
+@media only screen and (max-width: 40.813em) {
+	body{
+		background-size: 600px 600px;
+	}
+	.mainBtn {
+		margin: 0 0px 0 0px;
+    	padding: 1px 10px 1px 10px;
+	}
+	.jumbotron p {
+	font-size: 12px;
+	}
+}
+
+/*590 -- iphone 5 landscape (568)*/
+@media only screen and (max-width: 36.875em) {
+	body{
+		background-size: 560px 560px;
+	}
+	.mainBtn {
+    	margin: 0 3px 0 3px;
+    	padding: 1px 10px 1px 10px;
+	}
+}
+
+/* 543px -- iphone 5 landscape */
+@media only screen and (max-width: 33.938em) {
+	body{
+		background-size: 510px 510px;
+	}
+	.mainBtn {
+    	margin: 0 15px 0 0;
+    	padding: 1px 10px 1px 10px;
+	}
+}
+
+/* 499px*/
+@media only screen and (max-width: 31.188em) {
+	body{
+		background-size: 460px 460px;
+	}
+	.mainBtn {
+    	margin: 0 1px 0 0;
+    	padding: 1px 3px 1px 3px;
+	}
+}
+
+/* 457px*/
+@media only screen and (max-width: 28.563em) {
+	body{
+		background-size: 410px 410px;
+	}
+	.mainBtn {
+		margin: 0 1px 0 0px;
+    	padding: 1px 3px 1px 3px;
+	}
+	.jumbotron p {
+		font-size: 11px;
+	}
+}
+
+/* 383px*/
+@media only screen and (max-width: 23.938em) {
+	body{
+		background-size: 360px 360px;
+	}
+
+}
+
+/* 360px*/
+@media only screen and (max-width: 22.500em) {
+body{
+		background-size: 310px 310px;
+	}
+	.jumbotron p {
+		font-size: 14px;
+	}
+}
+
+/* 336px*/
+@media only screen and (max-width: 21.000em) {
+	body{
+		background-size: 260px 260px;
+	}
+	.jumbotron p {
+		font-size: 13px;
+	}
+}
+
+/* 320px*/
+@media only screen and (max-width: 20.000em) {
+	body{
+		background-size: 220px 220px;
+	}
+	.topBarImage {
+		margin: 1px 25px 1px 16px;
+		clear: none;
+	}
+}
+
+/* 213px*/
+@media only screen and (max-width: 13.313em) {
+	body{
+		background-size: 180px 180px;
+	}
+}
+/*Heights*/
+/*650
+@media only screen and (max-height: 40.625em) {
+body{
+		background-size: 480px 480px;
+	}
+}*/
+/*600
+@media only screen and (max-height: 37.500em) {
+body{
+		background-size: 470px 470px;
+	}
+}*/
