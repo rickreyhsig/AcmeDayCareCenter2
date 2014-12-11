@@ -1,3 +1,54 @@
+<?php
+
+/********AUTHENTICATION*********/
+$con =  mysql_connect("localhost", "root", "");
+if ($con){/*echo "Successfully connected to the database."."<br/>";*/}
+if (!$con)
+{ die("Could not connect:" . mysql_error()); }
+$sel = mysql_select_db("CMAP282FinalProject", $con);
+if (!$sel) { die('could not select:'.mysql_error());}
+
+//echo $_SERVER['PHP_AUTH_USER'];
+//echo $_SERVER['PHP_AUTH_PW'];
+$user = $_SERVER['PHP_AUTH_USER'];
+$auth = false;
+
+$sel_stmt = "
+SELECT administrators.emailAddress, administrators.password
+FROM administrators
+WHERE administrators.emailAddress = '$user'";
+
+$sel = mysql_query($sel_stmt) or die($sel_stmt."<br/><br/>".mysql_error());
+
+while ($row = mysql_fetch_assoc($sel)) {
+  //print_r($row);
+  if ($_SERVER['PHP_AUTH_USER'] == $row['emailAddress'] && $_SERVER['PHP_AUTH_PW'] == $row['password']){
+    //echo "Success";
+    $auth = true;
+  }else{
+    //echo "Fail";
+  }
+}
+
+if (!isset($_SERVER['PHP_AUTH_USER'])) {
+  header("WWW-Authenticate: Basic realm=\"Private Area\"");
+  header("HTTP/1.0 401 Unauthorized");
+  print "Sorry - you need valid credentials to be granted access!\n";
+  exit;
+} else {
+    if ($auth) {
+    //print "Welcome to the private area!";
+  } else {
+    header("WWW-Authenticate: Basic realm=\"Private Area\"");
+    header("HTTP/1.0 401 Unauthorized");
+    print "Sorry - you need valid credentials to be granted access!\n";
+    exit;
+  }
+}
+?>
+/********AUTHENTICATION*********/
+
+
 <html>
 <?php
 $operation = $_GET['operation'];
