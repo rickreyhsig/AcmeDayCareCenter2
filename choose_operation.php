@@ -23,8 +23,7 @@ if($operation=='enroll_child'){
 }elseif($operation=='list_children'){
   echo "Please enter information of the class you want to list the children for:";
   echo '<form method=get action=list_children.php>
-  <input input=text name=book_name value="Book Name"><br>
-  <input input=text name=book_category value="Book Category"><br>
+  <input input=text name=class_id value="Class ID/Age Group"><br>
   <input type=submit>';
 }
 
