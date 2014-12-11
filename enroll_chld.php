@@ -25,7 +25,5 @@ if ($ins){echo 'Successfully inserted '.$child_fname .' in the school roster.';}
 else{echo 'Error inserting'.mysql_error();}
 echo '<br/><a href="./index.html">Home</a>';
 
-
 ?>
-
 </html>
